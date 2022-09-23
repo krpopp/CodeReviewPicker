@@ -24,8 +24,20 @@ public class Shuffler : MonoBehaviour
                 students.Add(PlayerPrefs.GetString("student" + i));
             }
         }
-        currentStudent = Random.Range(0, students.Count);
+        //currentStudent = Random.Range(0, students.Count);
+        ShuffleStudents();
         nameField.text = students[currentStudent];
+    }
+
+    void ShuffleStudents() {
+        List<string> randomStudents = new List<string>();
+        while(students.Count > 0)
+        {
+            int rand = Random.Range(0, students.Count);
+            randomStudents.Add(students[rand]);
+            students.RemoveAt(rand);
+        }
+        students = randomStudents;
     }
 
 

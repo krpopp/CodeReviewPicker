@@ -1081,11 +1081,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   students:
-  - bob
-  - sara
-  - joe
-  - liam
-  - zoe
+  - Lorg
+  - Akshay
+  - Cam
+  - Zhiyue
+  - Mischa
+  - Zachary
+  - Hao
+  - Qi
+  - Shaoxuan
+  - Tommy
+  - Jon
+  - Leslie
   nameField: {fileID: 1399931633}
 --- !u!4 &1883749841
 Transform:
